@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase:{
+    apiKey: '',
+    authDomain: 'realtime-blood-donation.firebaseapp.com',
+    databaseURL: 'https://realtime-blood-donation.firebaseio.com',
+    projectId: 'realtime-blood-donation',
+    storageBucket: 'gs://realtime-blood-donation.appspot.com/',
+  }
 };
 
 /*

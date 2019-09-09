@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
-
-const config = {
-  apiKey: '-8w',
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-};
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +11,7 @@ export class AppComponent {
   title = 'realtime-blood-donation';
 
   constructor() {
-    firebase.initializeApp(config);
+    firebase.initializeApp(environment.firebase);
   }
 
 }
